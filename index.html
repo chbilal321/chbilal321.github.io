@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bilal Shaker, PhD — Computational Drug Discovery</title>
+<meta name="description" content="Bilal Shaker, PhD — Alberta Innovates Postdoctoral Fellow at the University of Alberta. Machine learning, generative AI and molecular simulation for drug discovery. Developer of LightBBB and LogBB_Pred.">
+<meta property="og:title" content="Bilal Shaker, PhD — Computational Drug Discovery">
+<meta property="og:description" content="Machine learning, generative AI and molecular simulation for drug discovery.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://chbilal321.github.io/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23275D38'/%3E%3Cpath d='M32 12l17 10v20L32 52 15 42V22z' fill='none' stroke='%23F2CD00' stroke-width='4'/%3E%3Ccircle cx='32' cy='32' r='6' fill='%23F2CD00'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..600&family=Public+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=9">
+<script>
+  try { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav" id="top">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top" aria-label="Bilal Shaker, home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3l11 6.5v13L16 29 5 22.5v-13z"/><circle cx="16" cy="16" r="3.4"/></svg>
+      <span>Bilal Shaker</span>
+    </a>
+    <nav aria-label="Sections">
+      <button class="menu-btn" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <ul id="nav-links">
+        <li><a href="#research">Research</a></li>
+        <li><a href="#tools">Tools</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#journey">Experience</a></li>
+        <li><a href="#honors">Honors</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="theme-btn" id="themeBtn" aria-label="Switch to light theme">
+      <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v3M12 19.5v3M1.5 12h3M19.5 12h3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M4.6 19.4l2.1-2.1M17.3 6.7l2.1-2.1"/></svg>
+      <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <p class="hero-role">Alberta Innovates Postdoctoral Fellow<br>University of Alberta, Edmonton</p>
+      <h1 class="hero-name">Bilal<br>Shaker<span class="phd">, PhD</span></h1>
+      <p class="motto">“Every molecule is a question written in geometry. I teach machines to read it.”</p>
+      <p class="hero-lede">I build machine learning, generative AI and molecular simulation methods that decide which molecules are worth making — and which can reach the brain.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="assets/Bilal_Shaker_CV.pdf" download>Download CV</a>
+        <a class="btn" href="https://scholar.google.ca/citations?user=GSIuMc0AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+        <a class="btn" href="mailto:ch.bilal321@outlook.com">Email me</a>
+      </div>
+      <dl class="hero-facts">
+        <div><dt>Citations</dt><dd data-count="1520">1,520</dd></div>
+        <div><dt>h-index</dt><dd data-count="14">14</dd></div>
+        <div><dt>Publications</dt><dd data-count="25" data-suffix="+">25+</dd></div>
+        <div><dt>Tool users</dt><dd data-count="2000" data-suffix="+">2,000+</dd></div>
+      </dl>
+    </div>
+    <figure class="hero-fig">
+      <div class="viewer" id="viewer" role="img" aria-label="Rotating 3D structure of the beta-2 adrenergic receptor, a GPCR, with the drug carazolol bound in its pocket">
+        <canvas class="viewer-fallback" id="viewerFallback" aria-hidden="true"></canvas>
+      </div>
+      <figcaption>
+        <strong>β<sub>2</sub>-adrenergic receptor</strong>, a GPCR, holding carazolol (gold) in its binding pocket. PDB 2RH1. Drag to rotate it.
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section about" id="about">
+  <div class="wrap about-grid">
+    <div class="portrait">
+      <img src="assets/photo.jpg" alt="Portrait of Bilal Shaker" width="320" height="320" onerror="this.remove(); document.querySelector('.portrait').classList.add('no-photo')">
+      <svg class="monogram" viewBox="0 0 200 200" aria-hidden="true">
+        <g class="orbit"><ellipse cx="100" cy="100" rx="88" ry="34"/><circle cx="188" cy="100" r="6"/></g>
+        <g class="orbit o2"><ellipse cx="100" cy="100" rx="88" ry="34" transform="rotate(60 100 100)"/><circle cx="144" cy="176" r="6"/></g>
+        <g class="orbit o3"><ellipse cx="100" cy="100" rx="88" ry="34" transform="rotate(-60 100 100)"/><circle cx="56" cy="176" r="6"/></g>
+        <text x="100" y="116" text-anchor="middle">BS</text>
+      </svg>
+    </div>
+    <div class="about-text">
+      <h2>From predicting whether a drug crosses the blood–brain barrier to generating molecules that should.</h2>
+      <p>I'm a computational researcher with more than six years in machine-learning-driven drug discovery, structural bioinformatics and precision medicine. During my PhD at Chung-Ang University I built <a href="#tools">LightBBB and LogBB_Pred</a>, two open prediction servers now used by more than 2,000 researchers worldwide.</p>
+      <p>Today, as an Alberta Innovates Postdoctoral Fellow at the University of Alberta, I develop generative models, transformers and graph neural networks for de novo design of CNS-penetrant compounds, and an AI platform that nominates new drug targets from multi-omics data. I work closely with medicinal chemists and biochemists, and I supervise Master's and PhD students.</p>
+      <div class="route" aria-label="Career path: Pakistan, South Korea, Canada">
+        <svg viewBox="0 0 600 80" aria-hidden="true">
+          <path id="routePath" d="M8 50 C 150 -10, 240 100, 300 40 S 470 0, 592 44"/>
+          <circle class="stop" cx="8" cy="50" r="4"/><circle class="stop" cx="300" cy="40" r="4"/><circle class="stop" cx="592" cy="44" r="4"/>
+          <circle class="traveler" r="5"><animateMotion dur="7s" repeatCount="indefinite" rotate="auto"><mpath href="#routePath"/></animateMotion></circle>
+        </svg>
+        <ol>
+          <li><span>Pakistan</span>BS, MPhil, lecturer</li>
+          <li><span>South Korea</span>PhD, Brain Pool Fellow</li>
+          <li><span>Canada</span>Alberta Innovates Fellow</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESEARCH -->
+<section class="section research" id="research">
+  <div class="wrap">
+    <header class="sec-head">
+      <h2>Research</h2>
+      <p>Four ideas I keep returning to, each drawn live in your browser.</p>
+    </header>
+
+    <article class="fig-row">
+      <figure class="fig">
+        <canvas id="figMD" aria-label="Live molecular dynamics simulation of a ligand moving through solvent near a binding pocket, with energy and temperature traces"></canvas>
+        <figcaption><b>Fig. 1</b> A live Lennard-Jones simulation: a ligand (gold) samples solvent near a binding pocket (green). Traces show potential energy and temperature under a Berendsen thermostat. <button class="link-btn" data-action="md-heat">Heat to 450 K</button></figcaption>
+      </figure>
+      <div class="fig-text">
+        <h3>Molecular dynamics</h3>
+        <p>Docking gives a snapshot; dynamics shows whether the pose survives. I use GROMACS and AMBER for conformational sampling, binding-pathway analysis and free-energy estimates — validating predictions before anyone spends time at the bench.</p>
+        <ul class="tags"><li>GROMACS</li><li>AMBER</li><li>Free energy</li><li>Allosteric sites</li><li>GPCRs</li></ul>
+      </div>
+    </article>
+
+    <article class="fig-row flip">
+      <figure class="fig">
+        <canvas id="figGen" aria-label="Animation of a diffusion model denoising random atoms into drug-like molecules"></canvas>
+        <figcaption><b>Fig. 2</b> Reverse diffusion: random noise is denoised, step by step, into a valid molecular graph. <span id="genName" class="gen-name"></span></figcaption>
+      </figure>
+      <div class="fig-text">
+        <h3>Generative AI for molecules</h3>
+        <p>Chemical libraries only cover a sliver of drug-like space. I build diffusion models, VAEs and reinforcement-learning pipelines that generate new compounds from a protein sequence and optimise them for potency, selectivity, ADMET safety and brain penetration at the same time.</p>
+        <ul class="tags"><li>Diffusion models</li><li>VAEs</li><li>Reinforcement learning</li><li>Transformers</li><li>GNNs</li><li>PROTACs</li></ul>
+      </div>
+    </article>
+
+    <article class="fig-row">
+      <figure class="fig">
+        <canvas id="figClf" aria-label="A small neural network learning a decision boundary that separates brain-penetrant from non-penetrant compounds by polar surface area and logP"></canvas>
+        <figcaption><b>Fig. 3</b> A small neural network trains in your browser to separate BBB+ and BBB− compounds by polar surface area and logP. <button class="link-btn" data-action="clf-reset">Retrain on new data</button></figcaption>
+      </figure>
+      <div class="fig-text">
+        <h3>ADMET classifiers</h3>
+        <p>Most drug candidates fail on absorption, metabolism or toxicity rather than potency. I build AutoML and ensemble classifiers for BBB permeability, CYP inhibition, hERG, liver injury and mutagenicity, so bad candidates are dropped early and cheaply.</p>
+        <ul class="tags"><li>AutoML</li><li>LightGBM</li><li>XGBoost</li><li>Ensembles</li><li>RDKit</li></ul>
+      </div>
+    </article>
+
+    <article class="fig-row flip">
+      <figure class="fig">
+        <canvas id="figOmics" aria-label="Network animation of multi-omics data converging on candidate drug targets"></canvas>
+        <figcaption><b>Fig. 4</b> Genomic, transcriptomic and proteomic evidence propagates through an interaction network; the strongest-supported nodes light up as candidate targets.</figcaption>
+      </figure>
+      <div class="fig-text">
+        <h3>AI-driven target discovery</h3>
+        <p>Before designing a molecule you need the right target. I integrate multi-omics data with protein–protein interaction networks to nominate and rank druggable targets — currently for gastric and intestinal cancer — and to stratify patients for precision medicine.</p>
+        <ul class="tags"><li>Multi-omics</li><li>PPI networks</li><li>Druggability</li><li>Precision medicine</li></ul>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- TOOLS -->
+<section class="section tools" id="tools">
+  <div class="wrap">
+    <header class="sec-head">
+      <h2>Tools anyone can use</h2>
+      <p>Two web servers from my PhD, and open code from my current work.</p>
+    </header>
+
+    <figure class="bbb-fig">
+      <canvas id="figBBB" aria-label="Animation of molecules in the bloodstream reaching the blood–brain barrier; lipophilic molecules cross into the brain while polar ones are blocked"></canvas>
+      <figcaption>Blood (top), endothelial barrier (middle), brain (bottom). Small lipophilic molecules cross; polar ones are turned back. This is the question both servers answer.</figcaption>
+    </figure>
+
+    <div class="servers">
+      <a class="server" href="https://lightbbb.lile.bio/" target="_blank" rel="noopener">
+        <span class="server-kind">Web server · classification</span>
+        <h3>LightBBB</h3>
+        <p>Predicts whether a compound penetrates the blood–brain barrier (BBB+ / BBB−), using a gradient-boosted LightGBM model.</p>
+        <p class="server-meta">Bioinformatics, 2021 · 214 citations</p>
+        <span class="server-go">Open LightBBB</span>
+      </a>
+      <a class="server" href="http://ssbio.cau.ac.kr/software/logbb_pred/" target="_blank" rel="noopener">
+        <span class="server-kind">Web server · regression</span>
+        <h3>LogBB_Pred</h3>
+        <p>Goes one step further and predicts the quantitative logBB value — how much of a compound reaches the brain compared with the blood.</p>
+        <p class="server-meta">Bioinformatics, 2023 · 70 citations</p>
+        <span class="server-go">Open LogBB_Pred</span>
+      </a>
+    </div>
+
+    <div class="repos">
+      <a class="repo" href="https://github.com/kbarakat/B_Shaker_et_al_2026" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5z"/></svg>
+        <div>
+          <h3>Multi-endpoint toxicity prediction</h3>
+          <p>AI platform for early-stage drug toxicity: weighted ensembles of Random Forest, XGBoost, LightGBM and CatBoost for Ames mutagenicity, carcinogenicity, liver injury (DILI), hERG and hematotoxicity.</p>
+          <ul class="endpoints"><li>Ames</li><li>Carcinogenicity</li><li>DILI</li><li>hERG</li><li>Hematotoxicity</li></ul>
+        </div>
+      </a>
+      <a class="repo" href="https://github.com/chbilal321/BIO" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5z"/></svg>
+        <div>
+          <h3>AutoML for ADMET prediction</h3>
+          <p>Code and data for the J. Chem. Inf. Model. 2025 study: hyperparameter-optimised AutoML models for eleven ADMET endpoints, trainable on your own SMILES data.</p>
+          <ul class="endpoints"><li>Caco-2</li><li>P-gp</li><li>BBB</li><li>CYP1A2</li><li>CYP2C9</li><li>CYP2C19</li><li>CYP2D6</li><li>CYP3A4</li><li>HLM</li><li>RLM</li><li>hERG</li></ul>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- PUBLICATIONS -->
+<section class="section pubs" id="publications">
+  <div class="wrap">
+    <header class="sec-head">
+      <h2>Publications</h2>
+      <p>25+ peer-reviewed papers · 1,520 citations · h-index 14 · i10-index 18. Full, up-to-date list on <a href="https://scholar.google.ca/citations?user=GSIuMc0AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>.</p>
+    </header>
+
+    <div class="cite-chart" id="citeChart" aria-label="Chart of citations per paper, grouped by year"></div>
+
+    <div class="pub-controls">
+      <div class="chips" role="group" aria-label="Filter publications">
+        <button class="chip" aria-pressed="true" data-filter="all">All</button>
+        <button class="chip" aria-pressed="false" data-filter="first">First author</button>
+        <button class="chip" aria-pressed="false" data-filter="ml">ML &amp; AI</button>
+        <button class="chip" aria-pressed="false" data-filter="vaccine">Vaccine design</button>
+        <button class="chip" aria-pressed="false" data-filter="clinical">Genetics &amp; clinical</button>
+      </div>
+      <label class="search"><span class="sr">Search publications</span><input type="search" id="pubSearch" placeholder="Search titles, journals, authors"></label>
+    </div>
+    <ol class="pub-list" id="pubList"></ol>
+    <p class="pub-empty" id="pubEmpty" hidden>No papers match that search. Try a journal name or a keyword like “vaccine”.</p>
+
+    <div class="patent">
+      <h3>Patent</h3>
+      <p><strong>SCN2A (R1629L) mutation epilepsy treatment</strong><br>Na, D., Shaker, B., Ko, A., Kang, H.C., Kim, J.H. · Korean application 10-2024-0112298, filed August 2024</p>
+    </div>
+  </div>
+</section>
+
+<!-- JOURNEY -->
+<section class="section journey" id="journey">
+  <div class="wrap">
+    <header class="sec-head">
+      <h2>Experience &amp; education</h2>
+    </header>
+    <ol class="timeline">
+      <li class="now">
+        <time>Sep 2025 – present</time>
+        <h3>Postdoctoral Researcher, Alberta Innovates Fellow</h3>
+        <p class="where">University of Alberta, Edmonton, Canada</p>
+        <p>Generative AI pipelines for de novo design and lead optimisation; diffusion models and reinforcement learning for CNS-penetrant compounds; a multi-omics platform for target identification. Supervising Master's and PhD students.</p>
+      </li>
+      <li>
+        <time>Jul 2023 – Aug 2025</time>
+        <h3>Research Fellow, Brain Pool Program</h3>
+        <p class="where">Ewha Womans University, Seoul, South Korea</p>
+        <p>ML frameworks for GPCRs and allosteric modulators; deep learning for protein–ligand binding affinity; docking and MD validation. 8+ co-authored papers.</p>
+      </li>
+      <li>
+        <time>Aug 2019 – Feb 2023</time>
+        <h3>PhD in Bioinformatics</h3>
+        <p class="where">Chung-Ang University, Seoul, South Korea</p>
+        <p>Thesis: machine-learning methods to predict blood–brain barrier permeability. Built LightBBB and LogBB_Pred; 15+ papers. Best Research Graduate Award.</p>
+      </li>
+      <li>
+        <time>Sep 2018 – Jul 2019</time>
+        <h3>Visiting Lecturer</h3>
+        <p class="where">SARHAD University, Islamabad, Pakistan</p>
+        <p>Taught bioinformatics, parasitology and gene manipulation to undergraduate and graduate students.</p>
+      </li>
+      <li>
+        <time>2016 – Oct 2018</time>
+        <h3>MPhil in Bioinformatics</h3>
+        <p class="where">Quaid-i-Azam University, Islamabad, Pakistan</p>
+        <p>Thesis: drug-target screening against LpxA of <i>Klebsiella pneumoniae</i>, specialising in molecular dynamics. Punjab Government Scholarship.</p>
+      </li>
+      <li>
+        <time>Sep 2016</time>
+        <h3>BS in Bioinformatics</h3>
+        <p class="where">COMSATS Institute of Information Technology, Sahiwal, Pakistan</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- HONORS -->
+<section class="section honors" id="honors">
+  <div class="wrap">
+    <header class="sec-head">
+      <h2>Honours &amp; awards</h2>
+    </header>
+    <ul class="honor-list">
+      <li class="major"><span class="yr">2025</span><div><h3>Alberta Innovates Postdoctoral Recruitment Fellowship</h3><p>One of Canada's most competitive merit-based fellowships for early-career scientists.</p></div></li>
+      <li><span class="yr">2025</span><div><h3>Best Oral Research Presentation</h3><p>20th PSK Medicinal Chemistry Workshop, South Korea</p></div></li>
+      <li><span class="yr">2023</span><div><h3>Invited speaker</h3><p>ACSGii and ICCST7 international conferences</p></div></li>
+      <li class="major"><span class="yr">2023</span><div><h3>Brain Pool Korea Fellowship</h3><p>National Research Foundation of Korea — the country's leading appointment for international scientists.</p></div></li>
+      <li><span class="yr">2023</span><div><h3>Best Research Graduate Award</h3><p>Chung-Ang University</p></div></li>
+      <li><span class="yr">2019–21</span><div><h3>CAYSS Young Scientist Scholarship</h3><p>Chung-Ang University</p></div></li>
+      <li><span class="yr">2019–21</span><div><h3>Korean Government Research Grant</h3><p>MSIT / National Research Foundation of Korea</p></div></li>
+      <li><span class="yr">2016–18</span><div><h3>Punjab Government Scholarship</h3><p>Quaid-i-Azam University</p></div></li>
+      <li><span class="yr"></span><div><h3>Laptop Award</h3><p>Prime Minister's Youth Program, Pakistan</p></div></li>
+    </ul>
+
+    <div class="skills">
+      <h3>Toolkit</h3>
+      <dl>
+        <div><dt>Machine learning</dt><dd>PyTorch, TensorFlow, scikit-learn, Hugging Face Transformers, GNNs, AutoML, active learning</dd></div>
+        <div><dt>Generative design</dt><dd>Diffusion models, VAEs, reinforcement learning, multi-objective optimisation</dd></div>
+        <div><dt>Structure &amp; simulation</dt><dd>GROMACS, AMBER, AutoDock, Vina, Glide, AlphaFold2, Rosetta, Modeller</dd></div>
+        <div><dt>Cheminformatics</dt><dd>RDKit, MOE, OpenBabel, pharmacophores, SAR, synthesis planning</dd></div>
+        <div><dt>Programming</dt><dd>Python (expert), R, Bash, Linux, Git, Jupyter</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact" id="contact">
+  <div class="wrap contact-inner">
+    <h2>Let's design something that reaches its target.</h2>
+    <p>Open to collaborations in AI-driven drug discovery, ADMET modelling and CNS drug design.</p>
+    <a class="mail" href="mailto:ch.bilal321@outlook.com">ch.bilal321@outlook.com</a>
+    <ul class="socials">
+      <li><a href="https://scholar.google.ca/citations?user=GSIuMc0AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+      <li><a href="https://www.linkedin.com/in/dr-bilal-shaker-ph-d-524692178/" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="https://github.com/chbilal321" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="assets/Bilal_Shaker_CV.pdf" download>CV (PDF)</a></li>
+    </ul>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">© <span id="year">2026</span> Bilal Shaker · Edmonton, Alberta</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/3dmol@2.5.5/build/3Dmol-min.js" integrity="sha384-OsczYbldvrHgslr9fFp/i4GiLSeuw9l+QIlv99ITw8soOwXcoGeflFMLg+CU/X1d" crossorigin="anonymous" defer></script>
+<script src="js/molecules.js?v=9" defer></script>
+<script src="js/data.js?v=9" defer></script>
+<script src="js/figures.js?v=9" defer></script>
+<script src="js/main.js?v=9" defer></script>
+</body>
+</html>
