@@ -360,3 +360,17 @@ a.pub-title:hover { color: var(--green-hi); text-decoration: underline; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .route .traveler { display: none; }
 }
+
+/* ongoing projects */
+.ongoing { margin-top: clamp(56px, 8vw, 100px); padding-top: 40px; border-top: 1px solid var(--line); }
+.ongoing h3 { font-size: clamp(1.6rem, 2.6vw, 2.1rem); margin-bottom: 24px; }
+.ongoing ul { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 12px; }
+.ongoing li {
+  position: relative; padding: 18px 20px 18px 44px;
+  border: 1px solid var(--line); border-radius: var(--radius); background: var(--bg-2);
+  font: 500 1.08rem/1.4 var(--serif); color: var(--ink);
+}
+.ongoing li::before {
+  content: ""; position: absolute; left: 20px; top: 26px; width: 9px; height: 9px; border-radius: 50%;
+  background: var(--ua-gold); box-shadow: 0 0 0 4px color-mix(in srgb, var(--ua-gold) 22%, transparent);
+}
